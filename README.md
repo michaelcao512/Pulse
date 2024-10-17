@@ -15,6 +15,13 @@ This web application is designed to streamline the user research and usability t
 - Provide a structured, efficient way to gather and analyze user feedback.
 - Deliver targeted insights that drive user-centered design improvements.
 
+## Team
+| Name            | Role                      |
+|-----------------|---------------------------|
+| Emma Kim        | UX Design and Front-End  |
+| Michael Cao     | Back-End    |
+
+
 ## Getting Started
 1. Clone the repository:
    ```
@@ -42,4 +49,5 @@ Feel free to fork the repository and submit pull requests. Contributions that im
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
+
 
