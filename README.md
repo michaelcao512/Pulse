@@ -1,7 +1,6 @@
 # Pulse
+A User Research & Usability Testing Web Application
 ---
-
-# User Research & Usability Testing Web Application
 
 ## Overview
 This web application is designed to streamline the user research and usability testing process, offering tools that make it easier to gather, analyze, and act on user feedback. It includes customizable surveys and profile matching features, connecting users with designers and marketers for more targeted and collaborative insights.
