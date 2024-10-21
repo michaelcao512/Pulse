@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { GlobalStyle, Container, Nav, Logo, Links, StyledLink, Hamburger, MobileMenu, GradientButton } from "./Styles/GeneralStyles";
+import { GlobalStyle, Container, Nav, Logo, Links, StyledLink, Hamburger, MobileMenu, GradientButton } from "@/Styles/GeneralStyles";
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function Home() {
       <GlobalStyle />
       <Nav>
         <Links>
-          <Image src="/src/logo.png" alt="Logo" width={50} height={20} />
+          <Image src="/@/src/logo.png" alt="Logo" width={50} height={20} />
           <StyledLink href="#link1">Home</StyledLink>
           <StyledLink href="#link2">About</StyledLink>
           <StyledLink href="#link3">Contact</StyledLink>
