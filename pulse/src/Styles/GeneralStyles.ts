@@ -38,8 +38,12 @@ export const Nav = styled.nav`
 `;
 
 export const Logo = styled.div`
-  font-size: 1.5rem;
+  // font-size: 1.5rem;
   font-weight: bold;
+  align-items: center;
+  display: flex;
+  
+  gap: 2rem;
 `;
 
 
@@ -83,6 +87,7 @@ export const MobileMenu = styled.div`
   flex-direction: column;
   background-color: #333;
   padding: 1rem;
+  color: black;
 
   a {
     padding: 0.5rem 0;

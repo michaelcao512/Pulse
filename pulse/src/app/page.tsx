@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import logo from '@/logo.png';
 import { GlobalStyle, Container, Nav, Logo, Links, StyledLink, Hamburger, MobileMenu, GradientButton } from "@/Styles/GeneralStyles";
 
 export default function Home() {
@@ -14,20 +15,25 @@ export default function Home() {
     <>
       <GlobalStyle />
       <Nav>
-        <Links>
-          <Image src="/@/src/logo.png" alt="Logo" width={50} height={20} />
+
+        <Logo>
+          <a href="#home">
+            <Image src={logo} alt="Logo" width={110} height={30} />
+          </a>
           <StyledLink href="#link1">Home</StyledLink>
           <StyledLink href="#link2">About</StyledLink>
           <StyledLink href="#link3">Contact</StyledLink>
-        </Links>
+        </Logo>
+
         <Links>
           <StyledLink href="#link1">Sign In</StyledLink>
-
           <GradientButton href="#signup">Sign Up</GradientButton>
         </Links>
+
         <Hamburger onClick={toggleMobileMenu}>
           &#9776;
         </Hamburger>
+
       </Nav>
 
       {isMobileMenuOpen && (
