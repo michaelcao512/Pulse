@@ -2,51 +2,58 @@
 import { useState } from "react";
 import Image from "next/image";
 import logo from '@/logo.png';
-import { GlobalStyle, Container, Nav, Logo, Links, StyledLink, Hamburger, MobileMenu, GradientButton } from "@/Styles/GeneralStyles";
+import { GlobalStyle, Container, Nav, Logo, Links, StyledLink, Hamburger, MobileMenu, GradientButton, GradientDiv, HorizontalDiv, VerticalDiv, HeroSection, HeroText, HeroImage, StyledHeroSection } from "@/Styles/GeneralStyles";
+import heroImage from '@/hero-img.png';
+import TypewriterText from '@/components/TypewriterText';
 
 export default function Home() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
   return (
     <>
       <GlobalStyle />
-      <Nav>
+      {/* <Container>
+        <HeroSection>
+          <HeroText>
+            <h1>Welcome to Pulse</h1>
+            <p>We offer top-notch services to help achieve your user</p>
+            <TypewriterText text="research and testing goals." />
+            <GradientButton href="#signup">Get Started</GradientButton>
+          </HeroText>
 
-        <Logo>
-          <a href="#home">
-            <Image src={logo} alt="Logo" width={110} height={30} />
-          </a>
-          <StyledLink href="#link1">Home</StyledLink>
-          <StyledLink href="#link2">About</StyledLink>
-          <StyledLink href="#link3">Contact</StyledLink>
-        </Logo>
+          <HeroImage>
+            <Image src={heroImage} alt="Hero" />
+          </HeroImage>
+        </HeroSection>
 
-        <Links>
-          <StyledLink href="#link1">Sign In</StyledLink>
-          <GradientButton href="#signup">Sign Up</GradientButton>
-        </Links>
-
-        <Hamburger onClick={toggleMobileMenu}>
-          &#9776;
-        </Hamburger>
-
-      </Nav>
-
-      {isMobileMenuOpen && (
-        <MobileMenu>
-          <a href="#link1">Home</a>
-          <a href="#link2">About</a>
-          <a href="#link3">Contact</a>
-          <GradientButton href="#signup">Sign Up</GradientButton>
-        </MobileMenu>
-      )}
+      </Container> */}
 
       <Container>
-        <h1>hi</h1>
+        <StyledHeroSection>
+          <VerticalDiv>
+            <HeroText>
+              <h1>Welcome to Pulse</h1>
+              <p>We offer top-notch services to help achieve your user</p>
+              <TypewriterText textArray={['research', 'testing', 'goals']} />
+            </HeroText>
+            <GradientButton href="#signup">Get Started</GradientButton>
+          </VerticalDiv>
+
+          {/* <HeroImage>
+            <Image src={heroImage} alt="Hero" />
+          </HeroImage> */}
+        </StyledHeroSection>
+      </Container>
+
+      <Container>
+        <GradientDiv>
+          <p>I hate coding</p>
+        </GradientDiv>
+      </Container>
+
+      <Container>
+        <HorizontalDiv>
+          <p>Horizontal Div</p>
+          <p>Horizontal Div</p>
+        </HorizontalDiv>
       </Container>
     </>
   );
