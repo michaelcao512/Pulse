@@ -176,53 +176,81 @@ export const VerticalDiv = styled.div`
   margin: 1rem;
 `;
 
-// Hero section styles spanning the full width
 export const HeroSection = styled.section`
   display: flex;
-  // justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 2.9rem;
-  height: 100vh;
-  width: 100%; /* Full width */
+  justify-content: center;
+  text-align: center;
+  padding: 6rem;
+  height: 150vh;
+  width: 100%;
   background-color: #f5f5f5;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem;
-    gap: 2rem;
-  }
-`;
-
-// Hero text block
-export const HeroText = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-
   h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    weight: 800;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+    padding-bottom: 2rem;
+    font-weight: 500;
   }
 
   p {
     font-size: 1.25rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-  }
-
-  @media (max-width: 768px) {
-    padding-right: 0;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
   }
 `;
 
-// Hero image section
-export const HeroImage = styled.div`
-  flex: 1;
+// Slideshow Section for features
+export const SlideshowSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  width: 100%;
+  background-color: #ffffff;
 
-  img {
-    max-width: 100%;
-    height: auto;
-    // border-radius: 12px;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .slideshow-container {
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slideshow-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    // Placeholder styling for slides
+    div {
+      min-width: 100%;
+      padding: 2rem;
+      text-align: center;
+      background-color: #f0f0f0;
+      border-radius: 12px;
+    }
   }
 `;

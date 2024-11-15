@@ -47,13 +47,13 @@ export const Navbar = () => {
                     <a href="#home">
                         <Image src={logo} alt="Logo" width={110} height={30} />
                     </a>
-                    <StyledLink href="#link1">Home</StyledLink>
-                    <StyledLink href="#link2">About</StyledLink>
-                    <StyledLink href="#link3">Contact</StyledLink>
+
                 </Logo>
 
                 <Links>
-
+                    <StyledLink href="#link1">Home</StyledLink>
+                    <StyledLink href="#link2">About</StyledLink>
+                    <StyledLink href="#link3">Contact</StyledLink>
                     <StyledLink href="#link1">Sign In</StyledLink>
                     <GradientButton href="#signup">Sign Up</GradientButton>
                 </Links>
@@ -68,6 +68,7 @@ export const Navbar = () => {
                     <a href="#link1">Home</a>
                     <a href="#link2">About</a>
                     <a href="#link3">Contact</a>
+                    <a href="#link4">Sign In</a>
                     <GradientButton href="#signup">Sign Up</GradientButton>
                 </MobileMenu>
             )}
